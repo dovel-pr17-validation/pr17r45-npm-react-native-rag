@@ -2675,15 +2675,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/compat@npm:^1.2.7":
-  version: 1.3.0
-  resolution: "@eslint/compat@npm:1.3.0"
+"@eslint/compat@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@eslint/compat@npm:2.1.1"
+  dependencies:
+    "@eslint/core": ^1.2.1
   peerDependencies:
-    eslint: ^9.10.0
+    eslint: ^8.40 || 9 || 10
   peerDependenciesMeta:
     eslint:
       optional: true
-  checksum: cf4ae188163bc9cedd5944206683cf0cda3fc5c5b314ba3fc6be0c380d9046d06a3b0c501bbd9c94bfe9c039ba2abe0dacc404a0c3d9074e383769a600c4fcf4
+  checksum: 032bd957f8cd7918eb072d40ce7b81eb48971f3246ad6838f64724d7df73f1edd85aaa400b0972fcd29ad757bd6ed6e8ca59e8246b70227034078bec5e939510
   languageName: node
   linkType: hard
 
@@ -2720,6 +2722,15 @@ __metadata:
   dependencies:
     "@types/json-schema": ^7.0.15
   checksum: 74ae0a38678fa1cae44732c5376b800c842993224301e6a4abc57edd123cfcb8c7746f38892adb8747b4f56c0a1c1db71ff619210508628eb9227d08a0d7bb92
+  languageName: node
+  linkType: hard
+
+"@eslint/core@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@eslint/core@npm:1.2.1"
+  dependencies:
+    "@types/json-schema": ^7.0.15
+  checksum: 430f53c5c6bcfabe54d7232d6b74bf9f6f62b0337f73ca0db70a0a0dbe4843243ce24577df61619fcbc0ef45cc6e2872074bed3295538acd72361b69f3b5eb47
   languageName: node
   linkType: hard
 
@@ -13496,7 +13507,7 @@ __metadata:
   resolution: "react-native-rag@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^19.6.0
-    "@eslint/compat": ^1.2.7
+    "@eslint/compat": ^2.1.1
     "@eslint/eslintrc": ^3.3.0
     "@eslint/js": ^9.22.0
     "@evilmartians/lefthook": ^1.5.0
